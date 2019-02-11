@@ -1,0 +1,25 @@
+{
+  "name": "Expo snippet Github",
+  "description": "Change the current page color",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": [
+        "js/jszip.min.js",
+        "js/jszip-utils.min.js"
+      ]
+    }
+  ],
+  "background" : {
+    "scripts" : ["js/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "manifest_version": 2
+}
